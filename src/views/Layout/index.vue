@@ -1,12 +1,17 @@
 <script setup>
-
+import LayoutNav from "@/views/Layout/components/LayoutNav.vue";
+import LayoutHeader from "@/views/Layout/components/LayoutHeader.vue";
+import LayoutFooter from "@/views/Layout/components/LayoutFooter.vue";
+import LayoutFixed from "@/views/Layout/components/LayoutFixed.vue";
 </script>
 
 <template>
-  <header>
-    我是首页的页面布局
-    <router-view/>
-  </header>
+  <LayoutFixed/>
+  <LayoutNav/>
+  <LayoutHeader/>
+<!--  <RouterView :key="$route.fullPath"/>-->
+  <RouterView/>
+  <LayoutFooter/>
 </template>
 
 <style scoped>
